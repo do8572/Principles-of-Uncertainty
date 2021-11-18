@@ -11,7 +11,7 @@ for(ind in 1:10000){
   doors <- c(1,2,3)
   empty.doors <- doors[!doors %in% c(reward, choice)]
   # Remember: R's amazing feature (not a BUG!!!)
-  # where sampling an element c(x) of len one is actually sampling 1:x
+  # where sampling an vector c(x) of len one is actually sampling 1:x
   if (length(empty.doors) > 1){
     empty.door <- sample(empty.doors, 1)
   }else{
